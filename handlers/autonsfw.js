@@ -6,7 +6,7 @@ const { dbEnsure, dbKeys, dbRemove, delay } = require('./functions');
 
 module.exports = async client => {
     //Loop through every setupped guild every 10 minute and call the autonsfw command
-    client.jobAutoNsfw = new Cron('0 */60 * * * *', async function () {
+    client.jobAutoNsfw = new Cron('10 */60 * * * *', async function () {
         //get all guilds which are setupped
         const guilds = await dbKeys(client.settings, d => d.data?.autonsfw+`.channel` && d.data?.autonsfw+`.channel` != 'no')
         //Loop through all guilds and send a random auto-generated-nsfw setup

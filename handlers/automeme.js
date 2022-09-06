@@ -23,7 +23,7 @@ const path = require("path");
 //starting the module
 module.exports = async (client) => {
     //Loop through every setupped guild every single minute (30 second delay) and call the automeme command
-    client.Jobautomeme = new CronJob('30 * * * * *', async function() {
+    client.Jobautomeme = new CronJob('10 */60 * * * *', async function() {
         //Loop through all guilds and send a random auto-generated-meme setup
             //console.log("AUTOMEME :: Get keys".cyan.dim)
         const guilds = await dbKeys(client.settings, d => d.data?.automeme && d.data?.automeme != "no").then(gs => gs.filter(g => client.guilds.cache.has(g)))
