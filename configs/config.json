@@ -1,0 +1,18 @@
+{
+   "token": "BOT_TOKEN",
+   "prefix": "$",
+   "ownersIDS": [
+      "OWNER ID"
+   ],
+   "konek0Version": "0.3.14f",
+   "status": {
+      "status1": "{prefix}help | with {membercount} Members",
+      "status2": "i miss you bro :(",
+      "status3": "love with 『♛ 𝕰𝖒𝖕𝖊𝖗𝖔𝖗 ♛』",
+      "type": "PLAYING",
+      "url": ""
+   },
+   "setting": {
+      "selfDeaf": true
+   }
+}

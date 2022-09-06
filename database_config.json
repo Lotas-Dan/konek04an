@@ -1,0 +1,12 @@
+{
+    "mongoUri": "your mongoUri",
+    "connectionOptions": {
+        "dbName": "your dbName",
+        "useUnifiedTopology": true,
+        "maxPoolSize": 200,
+        "minPoolSize": 50,
+        "retryWrites": true,
+        "writeConcern": "majority",
+        "keepAlive": true
+    }
+}

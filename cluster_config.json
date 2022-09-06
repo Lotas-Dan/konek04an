@@ -1,0 +1,11 @@
+{
+    "setting": {
+        "totelShard": 8,
+        "totalMachine": 2,
+        "shardPerCluster": 4
+    },
+    "redis": {
+        "password": null,
+        "url": null
+    }
+}
